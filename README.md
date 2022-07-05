@@ -8,7 +8,7 @@ What I need is to run `lazygit`` when I open the external terminal
 Open lazyGit with shortcut
 So this plugin was written to meet the need
 
-The implementation principle is very simple, internal through `exec`` to execute shell script
+The implementation principle is very simple, internal through `exec` to execute shell script
 The `ttab` cli tool is used to open Terminal, so you need to make sure that `ttab`` is installed when using this plug
 
 ## Usage
