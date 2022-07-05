@@ -1,6 +1,6 @@
 # quickOpenLazygit
 quick open lazygit  geek
-## why
+## Why
 
 Vscode itself can quickly open external terminal, but does not support args passing.
 For example, enter `ls` or blabla when opening terminal
@@ -23,3 +23,7 @@ If you use `iTerm2` then you can configure it in "settings.json"
 // default value is false
 quickOpenLazygit.useiTerm = true
 ```
+
+## Issues
+Iterm may not work if you don't open it in advance
+You can open iterm and try again
