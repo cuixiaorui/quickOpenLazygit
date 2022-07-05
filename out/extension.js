@@ -14,7 +14,7 @@ function activate(context) {
                 (0, execShell_1.execShell)(`cd ${wf} && ttab -a iTerm2 lazygit`);
             }
             else {
-                (0, execShell_1.execShell)(`cd ${wf} ttab lazygit`);
+                (0, execShell_1.execShell)(`cd ${wf} && ttab lazygit`);
             }
         }
         catch (error) {

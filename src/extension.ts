@@ -20,7 +20,7 @@ export function activate(context: vscode.ExtensionContext) {
             `cd ${wf} && ttab -a iTerm2 lazygit`
           );
         } else {
-          execShell(`cd ${wf} ttab lazygit`);
+          execShell(`cd ${wf} && ttab lazygit`);
         }
       } catch (error) {
         vscode.window.showErrorMessage(JSON.stringify(error));

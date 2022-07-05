@@ -2,7 +2,7 @@
 	"name": "quickOpenLazygit",
 	"displayName": "quick open lazygit",
 	"description": "quick open lazygit",
-	"version": "0.0.3",
+	"version": "0.0.6",
 	"publisher": "cuixiaorui",
 	"repository": "https://github.com/cuixiaorui/quickOpenLazygit",
 	"engines": {
