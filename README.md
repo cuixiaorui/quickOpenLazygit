@@ -21,7 +21,7 @@ If you use `iTerm2` then you can configure it in "settings.json"
 ```
 // settings.json
 // default value is false
-quickOpenLazygit.useiTerm = true
+quickOpenLazygit.useITerm = true
 ```
 
 ## Issues
