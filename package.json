@@ -1,10 +1,10 @@
 {
-	"name": "helloworld-sample",
-	"displayName": "helloworld-sample",
-	"description": "HelloWorld example for VS Code",
-	"version": "0.0.1",
-	"publisher": "vscode-samples",
-	"repository": "https://github.com/Microsoft/vscode-extension-samples/helloworld-sample",
+	"name": "quickOpenLazygit",
+	"displayName": "quick open lazygit",
+	"description": "quick open lazygit",
+	"version": "0.0.2",
+	"publisher": "cuixiaorui",
+	"repository": "https://github.com/cuixiaorui/quickOpenLazygit",
 	"engines": {
 		"vscode": "^1.34.0"
 	},
