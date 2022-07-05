@@ -18,7 +18,7 @@ The `ttab` cli tool is used to open Terminal, so you need to make sure that `tta
 
 ## Options
 If you use `iTerm2` then you can configure it in "settings.json"
-```json
+```
 // settings.json
 // default value is false
 quickOpenLazygit.useiTerm = true
