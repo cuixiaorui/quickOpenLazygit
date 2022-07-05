@@ -3,8 +3,8 @@ quick open lazygit  geek
 ## why
 
 Vscode itself can quickly open external terminal, but does not support args passing.
-For example, enter `ls`` or blabla when opening terminal
-What I need is to run `lazygit`` when I open the external terminal
+For example, enter `ls` or blabla when opening terminal
+What I need is to run `lazygit` when I open the external terminal
 Open lazyGit with shortcut
 So this plugin was written to meet the need
 
