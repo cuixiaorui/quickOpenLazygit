@@ -4,7 +4,7 @@ export function execShell(cmd: string) {
   return new Promise<string>((resolve, reject) => {
     exec(cmd, (err, out) => {
       if (err) {
-        console.error(err);
+        return reject(err)
       }
       return resolve(out);
     });

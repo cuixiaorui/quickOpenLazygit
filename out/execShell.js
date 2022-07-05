@@ -6,7 +6,7 @@ function execShell(cmd) {
     return new Promise((resolve, reject) => {
         (0, node_child_process_1.exec)(cmd, (err, out) => {
             if (err) {
-                console.error(err);
+                return reject(err);
             }
             return resolve(out);
         });
