@@ -12,7 +12,8 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.quickOpenLazygit"
+		"onCommand:extension.quickOpenLazygit",
+		"onCommand:extension.quickOpenLazygitVscode"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
@@ -21,6 +22,28 @@
 				"command": "extension.quickOpenLazygit",
 				"title": "quickOpenLazygit",
 				"category": "quickOpenLazygit"
+			},
+			{
+				"command": "extension.quickOpenLazygitVscode",
+				"title": "Open Lazygit inside VS Code",
+				"category": "quickOpenLazygit"
+			}
+		],
+		"configuration": [
+			{
+				"title": "quickOpenLazygit",
+				"properties": {
+					"quickOpenLazygit.maximizeTerminalWindow": {
+						"type": "boolean",
+						"default": false,
+						"description": "Maximize panel when opening lazygit in VS Code"
+					},
+					"quickOpenLazygit.lazygitPath": {
+						"type": "string",
+						"default": "lazygit",
+						"description": "Path for lazygit executable."
+					}
+				}
 			}
 		],
 		"keybindings": [
@@ -28,6 +51,11 @@
 				"command": "extension.quickOpenLazygit",
 				"key": "alt+G O",
 				"mac": "cmd+G O"
+			},
+			{
+				"command": "extension.quickOpenLazygitVscode",
+				"key": "alt+G l",
+				"mac": "cmd+G l"
 			}
 		]
 	},
