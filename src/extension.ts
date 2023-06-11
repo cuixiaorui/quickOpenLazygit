@@ -27,11 +27,6 @@ export function activate(context: vscode.ExtensionContext) {
     context.subscriptions.push(vscode.commands.registerCommand("extension.quickOpenLazygitVscode", () => {
         const terminal = createInstance("lazygit");
         terminal.show();
-
-        const maximize = vscode.workspace.getConfiguration().get("quickOpenLazygit.maximizeTerminalWindow")as boolean;
-        if (maximize) {
-            vscode.commands.executeCommand("workbench.action.toggleMaximizedPanel");
-        }
     }));
 
 
