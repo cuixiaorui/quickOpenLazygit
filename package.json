@@ -24,8 +24,8 @@
         "category": "quickOpenLazygit"
       },
       {
-				"command": "extension.quickOpenLazygitVscode",
-        "title": "Open Lazygit inside VS Code",
+        "command": "extension.quickOpenLazygitVscode",
+        "title": "Open lazygit in vscode terminal",
         "category": "quickOpenLazygit"
       }
     ],
@@ -53,9 +53,9 @@
         "mac": "cmd+G O"
       },
       {
-				"command": "extension.quickOpenLazygitVscode",
+        "command": "extension.quickOpenLazygitVscode",
         "key": "alt+G l",
-				"mac": "cmd+G l",
+        "mac": "cmd+G l",
         "when": "!terminalFocus"
       }
     ]
