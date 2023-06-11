@@ -1,50 +1,79 @@
 {
-	"name": "quickOpenLazygit",
-	"displayName": "quick open lazygit",
-	"description": "quick open lazygit",
-	"version": "0.0.6",
-	"publisher": "cuixiaorui",
-	"repository": "https://github.com/cuixiaorui/quickOpenLazygit",
-	"engines": {
-		"vscode": "^1.34.0"
-	},
-	"categories": [
-		"Other"
-	],
-	"activationEvents": [
-		"onCommand:extension.quickOpenLazygit"
-	],
-	"main": "./out/extension.js",
-	"contributes": {
-		"commands": [
-			{
-				"command": "extension.quickOpenLazygit",
-				"title": "quickOpenLazygit",
-				"category": "quickOpenLazygit"
-			}
-		],
-		"keybindings": [
-			{
-				"command": "extension.quickOpenLazygit",
-				"key": "alt+G O",
-				"mac": "cmd+G O"
-			}
-		]
-	},
-	"scripts": {
-		"vscode:prepublish": "npm run compile",
-		"compile": "tsc -p ./",
-		"lint": "eslint . --ext .ts,.tsx",
-		"watch": "tsc -watch -p ./"
-	},
-	"devDependencies": {
-		"@types/node": "^16.11.7",
-		"@types/vscode": "^1.34.0",
-		"@typescript-eslint/eslint-plugin": "^5.30.0",
-		"@typescript-eslint/parser": "^5.30.0",
-		"eslint": "^8.13.0",
-		"typescript": "^4.7.2"
-	},
-	"author": "cuixiaorui",
-	"license": "MIT"
+  "name": "quickOpenLazygit",
+  "displayName": "quick open lazygit",
+  "description": "quick open lazygit",
+  "version": "0.0.6",
+  "publisher": "cuixiaorui",
+  "repository": "https://github.com/cuixiaorui/quickOpenLazygit",
+  "engines": {
+    "vscode": "^1.34.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.quickOpenLazygit",
+    "onCommand:extension.quickOpenLazygitVscode"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.quickOpenLazygit",
+        "title": "quickOpenLazygit",
+        "category": "quickOpenLazygit"
+      },
+      {
+        "command": "extension.quickOpenLazygitVscode",
+        "title": "Open lazygit in vscode terminal",
+        "category": "quickOpenLazygit"
+      }
+    ],
+    "configuration": [
+      {
+        "title": "quickOpenLazygit",
+        "properties": {
+          "quickOpenLazygit.lazygitPath": {
+            "type": "string",
+            "default": "lazygit",
+            "description": "Path for lazygit executable."
+          },
+          "quickOpenLazygit.useiTerm": {
+            "type": "boolean",
+            "default": false,
+            "description": "Open lazygit in iTerm2."
+          }
+        }
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "extension.quickOpenLazygit",
+        "key": "alt+G O",
+        "mac": "cmd+G O"
+      },
+      {
+        "command": "extension.quickOpenLazygitVscode",
+        "key": "alt+G l",
+        "mac": "cmd+G l",
+        "when": "!terminalFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "lint": "eslint . --ext .ts,.tsx",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.7",
+    "@types/vscode": "^1.34.0",
+    "@typescript-eslint/eslint-plugin": "^5.30.0",
+    "@typescript-eslint/parser": "^5.30.0",
+    "eslint": "^8.13.0",
+    "typescript": "^4.7.2"
+  },
+  "author": "cuixiaorui",
+  "license": "MIT"
 }
