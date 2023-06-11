@@ -34,11 +34,16 @@ export function activate(context: vscode.ExtensionContext) {
         "extension.quickOpenLazygit",
     () => {
       try {
+        
+        // keep for legacy reasons
         const wf = vscode.workspace.workspaceFolders?.[0].uri.path || "/"
         const configuration: Config | undefined = vscode.workspace
           .getConfiguration()
           .get("quickOpenLazygit");
-        if (configuration?.useITerm === true) {
+
+        const useITerm = vscode.workspace.getConfiguration().get("quickOpenLazygit.useiTerm") as boolean;
+
+        if (configuration?.useITerm === true || useITerm) {
           execShell(
             `cd ${wf} && ttab -a iTerm2 lazygit`
           );

@@ -37,6 +37,11 @@
             "type": "string",
             "default": "lazygit",
             "description": "Path for lazygit executable."
+          },
+          "quickOpenLazygit.useiTerm": {
+            "type": "boolean",
+            "default": false,
+            "description": "Open lazygit in iTerm2."
           }
         }
       }
